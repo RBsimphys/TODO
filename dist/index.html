@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joblog</title>
+<script defer src="bundle.87aa6040b26397bd6960.js"></script></head>
+
+<body>
+    <div class="content">
+        <header class="nav">
+            <!-- <img src="./assets/JOBLOGO1.svg" id="logo" width="200px" height="auto"> -->
+            <h1 id = 'logo'>log(JOB)</h1>
+            <input type="text" id="search-bar" placeholder="Search Jobs, Category, Company">
+        </header>
+
+        <div class="form-container">
+            <form id="job-form" action="/" method="GET">
+                <div id="error"></div>
+                <legend>Log Position</legend>
+                <div class="input-container">
+                    <label for="title">title</label>
+                    <input data-name="input" type="text" name="job title" id="title" placeholder="R&D Engineer"
+                        required="required">
+                </div>
+                <div class="input-container">
+                    <label for="company">company</label>
+                    <input data-name="input" type="text" name="company" id="company" placeholder="Meta"
+                        required="required">
+                </div>
+                <div class="input-container">
+                    <label for="link">posting</label>
+                    <input data-name="input" type="text" name="job listing" id="link" placeholder="https://"
+                        required="required">
+                </div>
+                <div class="input-container">
+                    <label for="category">category</label>
+                    <input data-name="input" type="text" name="job category" id="category" placeholder="Software"
+                        required="required">
+                </div>
+
+                <div class="input-container-row">
+                    <div>
+                        <label for="status">status</label>
+                        <select data-name="input" id="status" name="job status" required="required">
+                            <option value="pending">Pending</option>
+                            <option value="interview">Interviewed</option>
+                            <option value="rejected">Rejected</option>
+                            <option value="accepted">Accepted</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="date">date applied</label>
+                        <input data-name="input" type="date" id="date" name="submission date" value="2018-07-22"
+                            min="2018-01-01" required="required">
+                    </div>
+
+                </div>
+                <input type="submit" value="log job" id="btn" />
+            </form>
+
+        </div>
+
+        <div class="job-aggregator-table" id="job-aggregator">
+            <h3>Current Positions</h3>
+
+            <div class = "job">
+                <div id="table-status"></div>
+                <p>Alcon - R&D Engineer</p>
+                <p>07/22/2018</p>
+            </div>
+
+
+            <div class = "job">
+                <div id="table-status"></div>
+                <p>Alcon - R&D Engineer</p>
+                <p>07/22/2018</p>
+            </div>
+
+            <div class = "job">
+                <div id="table-status"></div>
+                <p>Alcon - R&D Engineer</p>
+                <p>07/22/2018</p>
+            </div>
+
+            <div class = "job">
+                <div id="table-status"></div>
+                <p>Alcon - R&D Engineer</p>
+                <p>07/22/2018</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="calendar">Calendar</div>
+            <div class="email">Inbox</div>
+        </div>
+
+        <footer>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
